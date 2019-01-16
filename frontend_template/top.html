@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>top</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="../css/default.css"/>-->
+    <link rel="stylesheet" type="text/css" href="../css/component.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/modernizr.custom.js"></script>
+		<script src="../js/classie.js"></script>
+
+    <script src="../js/uisearch.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="top">
+    <div class="middle">
+        <a href="index.html" target="_top" class="logo"><img src="../asset/6.png" alt=""></a>
+        <div class="nav">
+            <ul>
+                <li><a href="share.html" target="_top">分享</a></li>
+                <li><a href="index.html" target="_top">想法</a></li>
+                <li><a href="comming.html" target="_top">待产</a></li>
+                <li><a href="shop.html" target="_top">商店</a></li>
+                <br class="clear"/>
+            </ul>
+
+        </div>
+        <div class="lgn">
+        	 <a href="mine.html" target="_top"><img src="../asset/12.png" alt=""></a>
+        	<div id="sb-search" class="sb-search">
+				<form>
+					<input class="sb-search-input" placeholder="  some" type="search" name="search" id="search">
+					<input class="sb-search-submit" type="submit" value="">
+					<span class="sb-icon-search"></span>
+				</form>
+			</div>
+
+
+        </div>
+        
+
+    </div>
+
+</div>
+<script>
+    function GetRequest() {
+
+        var url = location.search; //获取url中"?"符后的字串
+
+        if (url.indexOf("?") != -1) {    //判断是否有参数
+
+            var str = url.substr(1); //从第一个字符开始 因为第0个是?号 获取所有除问号的所有符串
+
+            strs = str.split("=");   //用等号进行分隔 （因为知道只有一个参数 所以直接用等号进分隔 如果有多个参数 要用&号分隔 再用等号进行分隔）
+
+            return strs[1];          //直接弹出第一个参数 （如果有多个参数 还要进行循环的）
+
+        }
+
+    }
+    var page = GetRequest("page") + '.html';
+    $("a[href=\'"+page+"\']").addClass("active");
+</script>
+<script>
+			new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+</body>
+</html>

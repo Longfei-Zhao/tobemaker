@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>tobeMaker-item</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qqFace.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.1.1.js"></script>
+    <script type="text/javascript" src="js/jQuery.pin.js"></script>
+    <script>
+        $(function(){
+            $('.emotion').qqFace({
+                id : 'facebox',
+                assign:'saytext',
+                path:'asset/arclist/'	//表情存放的路径
+            });
+            $(".sub_btn").click(function(){
+                var str = $("#saytext").val();
+                $("#show").html(replace_em(str));
+            });
+            $(".pendant").pin({
+                minWidth : 1220
+            });
+
+        });
+        function replace_em(str){
+            str = str.replace(/\</g,'&lt;');
+            str = str.replace(/\>/g,'&gt;');
+            str = str.replace(/\n/g,'<br/>');
+            str = str.replace(/\[em_([0-9]*)\]/g,'<img src="asset/arclist/$1.gif" border="0" />');
+            return str;
+        }
+    </script>
+</head>
+<body>
+<div id="top">
+    <iframe src="top.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</div>
+<div id="center">
+    <div class="middle">
+        <div class="item">
+            <div class="ttl">
+                <div class="title">icon动效设计心得</div>
+                <div class="author">
+                    <a href="javascript:void 0"><img src="asset/15.png" alt=""></a>
+                    <br />
+                    <a href="javascript:void 0">水泡长在驴身上</a>
+                </div>
+                <div class="subtitle">—— 临时卡大姐夫拉伸件东</div>
+                <div class="emailme">
+                    <a href="javascript:void 0"><img src="asset/10.png" alt=""></a>
+                    <a href="javascript:void 0"><img src="asset/11.png" alt=""></a>
+                </div>
+
+                <br class="clear"/>
+
+            </div>
+            <div class="atc">
+                <p>《哈佛商业评论》（ Harvard Business Review，简称HBR）创建于1922年，是哈佛
+                    的标志性杂志。建立之初，它的使命就是致力于改进管理实践。发展90年后，HBR已经成为
+                    先进管理理念的发源地，致力于给全世界的专业人士提供缜密的管理见解和最好的管理实践，
+                    天的还是最原生的全英文版本。《哈佛商业评论》（ Harvard Business Review，简称H
+                    的标志性杂志。建立之初，它的使命就是致力于改进管理实践。发展90年后，HBR已经成为
+                    先进管理理念的发源地，致力于给全世界的专业人士提供缜密的管理见解和最好的管理实践，
+                    天的还是最原生的全英文版本。《哈佛商业评论》（ Harvard Business Review，简称H
+                    先进管理理念的发源地，致力于给全世界的专业人士提供缜密的管理见解和最好的管理实践，
+                    天的还是最原生的全英文版本。《哈佛商业评论》（ Harvard Business Review，简称H
+                    的标志性杂志。建立之初，它的使命就是致力于改进管理实践。发展90年后，HBR已经成为
+                    先进管理理念的发源地，致力于给全世界的专业人士提供缜密的管理见解和最好的管理实践，
+                    天的还是最原生的全英文版本。</p>
+                <img src="asset/16.png" alt="">
+            </div>
+            <div class="commentbox">
+                <form action="javascript:void 0">
+                    <label>评论</label>
+                    <textarea id="saytext" name="saytext"></textarea>
+                    <a href="javascript:void 0" class="emotion">添加表情</a>
+                    <input type="checkbox"><span>同时推荐该想法</span>
+                    <input type="submit" value="评论">
+                    <p>个字符</p>
+                    <em>2000</em>
+                    <p>还可以输入</p>
+                </form>
+
+
+            </div>
+
+        </div>
+        <div class="comment">
+            <h1>全部评论</h1>
+            <ul>
+                <li>
+                    <div class="commenter">
+                        <a href="javascript:void 0"><img src="asset/15.png" alt=""></a>
+                        <br />
+                        <a href="javascript:void 0">水泡长在驴身上</a>
+                    </div>
+                    <div class="text">
+                        可穿戴计算机革命指日可待，我们需要做好相关设计技巧的准备。
+                        <img src="asset/17.png" alt="">
+                    </div>
+                </li>
+                <li>
+                        <div class="commenter">
+                            <a href="javascript:void 0"><img src="asset/15.png" alt=""></a>
+                            <br />
+                            <a href="javascript:void 0">水泡长在驴身上</a>
+                        </div>
+                        <div class="text">
+                            由国际体验设计协会（IXDC）主办的2014国际体验设计大会于7月18日在北京
+                            •国家会议中心隆重开幕。来自用户体验、交互、视觉、用户研究、管理创新等众
+                            多学界和业界翘楚汇聚一堂，带来他们对行业发展最新趋势和理念的独家见解，强
+                            强对话，激情碰撞。
+                            <img src="asset/17.png" alt="">
+                        </div>
+                    </li>
+                        <li>
+                            <div class="commenter">
+                                <a href="javascript:void 0"><img src="asset/15.png" alt=""></a>
+                                <br />
+                                <a href="javascript:void 0">水泡长在驴身上</a>
+                            </div>
+                            <div class="text">
+                                作为设计师而言，最痛苦的事情莫过于被否定、返工、重做，甚至前前后后改个没
+                                完到最后勉强通过了还被人诟病说水平太低。简直想摔键盘不干的冲动有木有？那
+                                我们抛开设计水平这种自身的硬性条件而言，看看是不是能找到一些可以短时间就
+                                改掉的不好习惯和认知作为设计师而言，最痛苦的事情莫过于被否定、返工、重做
+                                ，甚至前前后后改个没完到最后勉强通过了还被人诟病说水平太低。简直想摔键盘
+                                不干的冲动有木有？那我们抛开设计水平这种自身的硬性条件而言，看看是不是能
+                                找到一些可以短时间就改掉的不好习惯和认知作为设计师而言，最痛苦的事情莫过
+                                于被否定、返工、重做，甚至前前后后改个没完到最后勉强通过了还被人诟病说水
+                                平太低。简直想不是能找到一些可习惯和认知
+                                <img src="asset/17.png" alt="">
+                            </div>
+                        </li>
+            </ul>
+            <div class="pagenum">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+            </div>
+
+
+
+        </div>
+        <div class="pendant left">
+            <ul>
+                <li><a href="javascript:void 0" class="red" id="share">分&nbsp;&nbsp;&nbsp;&nbsp;享</a>
+                    <div id="sharein"><i id="weibobtn">微 博</i><i id="weixinbtn">微 信</i></div>
+                </li>
+                <li><a href="javascript:void 0">评&nbsp;&nbsp;&nbsp;&nbsp;论</a></li>
+                <li><a href="javascript:void 0">超喜欢</a></li>
+            </ul>
+
+        </div>
+        <div class="pendant right">
+            <a href="#top"><img src="asset/9.png" alt="" class="backtotop"></a>
+        </div>
+
+    </div>
+
+</div>
+<div id="footer">
+    <iframe src="footer.html" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</div>
+
+<div class="login hide" id="weibo">
+    <div class="form border dark">
+        <div class="weibo">
+            <h2>分享到微博</h2>
+            <form action="#">
+                <textarea></textarea>
+                <div class="info">
+                    <img src="asset/16.png" alt="">
+                    <div>
+                        <h5>【可以唱歌的杯子】</h5>
+                        <p>这是一款可以唱歌的杯子啊，这是一款可以唱歌的杯子啊......</p>
+                    </div>
+                </div>
+                <div class="link">
+                    <span>来自</span><a href="#">tobeMaker.com</a><span>的分享链接</span>
+                    <button>分 享</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="login hide" id="weixin">
+    <div class="form border dark">
+        <div class="weixin">
+            <img src="asset/34.png" alt="">
+            <p>用微信<span>扫一扫</span>上方的二维码，
+                <br/>
+                即可分享给您的微信好友或朋友圈。</p>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $("#share").hover(
+            function(){
+                $("#sharein").show();
+            },
+            function(){
+                $("#sharein").hide();
+            }
+    );
+    $("#sharein").hover(
+            function(){
+                $("#sharein").show();
+            },
+            function(){
+                $("#sharein").hide();
+            }
+    );
+    $("#weibobtn").click(function(){
+       $("#weibo").removeClass("hide");
+        $("#weibo").siblings("div").addClass("blur");
+    });
+    $("#weixinbtn").click(function(){
+        $("#weixin").removeClass("hide");
+        $("#weixin").siblings("div").addClass("blur");
+    });
+</script>
+
+</body>
+</html>
